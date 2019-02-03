@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Клиент - Поиск ошибки по коду</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 align="center">Поиск ошибки в системе по коду</h1>
+        <div align="center" style="padding: 50px; border: solid 1px black;">
+        <form name="inputcode" method="get" action="Client">
+            <p>Выберите категорию (система, в которой произошла ошибка):</p>
+            <select size="1" name="nametable">
+                <option value ="table1">СИСТЕМА 1</option>
+                <option value ="table2">СИСТЕМА 2</option>
+                <option value ="table3">СИСТЕМА 3</option>
+            </select>
+            <p>Введите код ошибки:</p>
+            <input type="number" name="errcode">
+            <input type="submit" name="submit" value="Найти">
+        </form>
+        </div>
+    </body>
+</html>
