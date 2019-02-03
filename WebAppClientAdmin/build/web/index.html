@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Клиент - Администратор</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 align="center">Администратор - Редактирование таблиц системных ошибок</h1>
+        <div align="center" style="padding: 50px; border: solid 1px black;">
+            <form name="inputcodeAdd" method="get" action="AddError">
+                Выберите категорию:
+                <select size="1" name="nametableAdd">
+                    <option value ="table1">СИСТЕМА 1</option>
+                    <option value ="table2">СИСТЕМА 2</option>
+                    <option value ="table3">СИСТЕМА 3</option>
+                </select>
+                <p>Введите код ошибки:
+                <input type="number" name="errcodeAdd">
+                <p>Введите описание:
+                <p><textarea name="descriptionAdd" cols="40" rows="5"></textarea>
+                <p><input type="submit" name="submitAdd" value="Добавить запись в таблицу">
+            </form>  
+        </div>
+        <div align="center" style="padding: 50px; border: solid 1px black;">
+            <form name="inputcodeDel" method="get" action="DeleteError">
+                Выберите категорию:
+                <select size="1" name="nametableDel">
+                    <option value ="table1">СИСТЕМА 1</option>
+                    <option value ="table2">СИСТЕМА 2</option>
+                    <option value ="table3">СИСТЕМА 3</option>
+                </select>
+                <p>Введите код ошибки:
+                <input type="number" name="errcodeDel">
+                <p><input type="submit" name="submitDel" value="Удалить запись из таблицы">
+            </form>  
+        </div>
+        <div align="center" style="padding: 50px; border: solid 1px black;">
+            <form name="inputcodeShow" method="get" action="ShowTable">
+                Выберите категорию:
+                <select size="1" name="nametableShow">
+                    <option value ="table1">СИСТЕМА 1</option>
+                    <option value ="table2">СИСТЕМА 2</option>
+                    <option value ="table3">СИСТЕМА 3</option>
+                </select>
+                <p><input type="submit" name="submitShow" value="Открыть таблицу для просмотра"> 
+            </form>
+        </div>
+    </body>
+</html>
